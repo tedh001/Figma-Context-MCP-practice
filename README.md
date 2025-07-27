@@ -7,17 +7,30 @@ A React frontend project built with Vite, TypeScript, and Biome.js for practicin
 - **React 18** - UI library
 - **TypeScript** - Type safety
 - **Vite** - Build tool and dev server
-- **Tailwind CSS** - Utility-first CSS framework
-- **shadcn/ui** - Re-usable component library
 - **Biome.js** - Linting and formatting
 - **Rollup** - Bundling (via Vite)
 
-## Getting Started
+## Prerequisites
 
-### Prerequisites
-
-- Node.js (version 18 or higher)
+- **Node.js 24.4.1** (specified in `.nvmrc`)
 - npm, yarn, or pnpm
+
+### Using nvm (Node Version Manager)
+
+If you're using nvm, you can automatically switch to the correct Node.js version:
+
+```bash
+nvm use
+```
+
+Or install the specific version if not already installed:
+
+```bash
+nvm install 24.4.1
+nvm use 24.4.1
+```
+
+## Getting Started
 
 ### Installation
 
@@ -46,20 +59,17 @@ npm run dev
 
 ```
 ├── src/
-│   ├── components/      # Reusable UI components
-│   │   └── ui/         # shadcn/ui components
-│   ├── lib/            # Utility functions
-│   ├── App.tsx         # Main application component
-│   ├── main.tsx        # Application entry point
-│   └── index.css       # Global styles (Tailwind)
-├── public/             # Static assets
-├── vite.config.ts      # Vite configuration
-├── tsconfig.json       # TypeScript configuration
-├── tailwind.config.js  # Tailwind CSS configuration
-├── postcss.config.js   # PostCSS configuration
-├── components.json     # shadcn/ui configuration
-├── biome.json          # Biome.js configuration
-└── package.json        # Dependencies and scripts
+│   ├── App.tsx          # Main application component
+│   ├── App.css          # Component styles
+│   ├── main.tsx         # Application entry point
+│   └── index.css        # Global styles
+├── public/              # Static assets
+├── vite.config.ts       # Vite configuration
+├── tsconfig.json        # TypeScript configuration
+├── tsconfig.node.json   # TypeScript config for Node tools
+├── biome.json           # Biome.js configuration
+├── .nvmrc              # Node.js version specification
+└── package.json         # Dependencies and scripts
 ```
 
 ## Development
@@ -67,8 +77,6 @@ npm run dev
 This project uses:
 - **Vite** for fast development and building
 - **TypeScript** for type safety
-- **Tailwind CSS** for styling with utility classes
-- **shadcn/ui** for pre-built, accessible components
 - **Biome.js** for linting and formatting
 - **React 18** with modern hooks and features
 
@@ -88,3 +96,7 @@ The project uses Biome.js for:
 - Type checking (via TypeScript)
 
 Run `npm run check` to perform all quality checks.
+
+## Node.js Version
+
+This project requires Node.js version 24.4.1 as specified in the `.nvmrc` file. Make sure you're using the correct version to avoid compatibility issues. 
