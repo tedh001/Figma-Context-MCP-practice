@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import { Button } from '@/components/ui/button'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,9 +11,9 @@ function App() {
         <h1>Figma Context MCP Practice</h1>
         <p>Welcome to your React + Vite + TypeScript + Biome.js project!</p>
         <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
+          <Button onClick={() => setCount((count) => count + 1)}>
             Count is {count}
-          </button>
+          </Button>
           <p>
             Edit <code>src/App.tsx</code> and save to test HMR
           </p>

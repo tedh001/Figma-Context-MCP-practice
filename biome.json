@@ -26,7 +26,8 @@
         "noExplicitAny": "warn"
       },
       "style": {
-        "useConst": "error"
+        "useConst": "error",
+        "useImportType": "off"
       }
     }
   },
