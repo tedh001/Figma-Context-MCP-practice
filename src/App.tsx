@@ -11,7 +11,7 @@ function App() {
         <h1>Figma Context MCP Practice</h1>
         <p>Welcome to your React + Vite + TypeScript + Biome.js project!</p>
         <div className="card">
-          <Button onClick={() => setCount((count) => count + 1)}>
+          <Button variant="outline" onClick={() => setCount((count) => count + 1)}>
             Count is {count}
           </Button>
           <p>
